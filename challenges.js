@@ -17,7 +17,7 @@ function sayHello() {
   return 'Hello!'
 }
 
-
+console.log(sayHello);
 /*-----------------------------------------------------------------
 Challenge: 01-addOne
 
@@ -33,10 +33,13 @@ addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
+function addOne(a) {
+  return a + 1;
+}
 
 
-
-
+console.log(1);
+console.log(-5);
 
 /*-----------------------------------------------------------------
 Challenge: 02-addTwoNumbers
@@ -57,7 +60,13 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
-
+function addTwoNumbers(a, b){
+  console.log(a + b);
+}
+addTwoNumbers(5, 10);
+addTwoNumbers(10, -2);
+addTwoNumbers(0,0);
+addTwoNumbers("hello", 5);
 
 
 
@@ -80,8 +89,13 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-
-
+function sumNumbers(arr){
+  return arr.reduce((a, b) => a + b, 0);
+}
+sumNumbers([10]);
+sumNumbers([5, 10]);
+sumNumbers([2, 10, -5]);
+sumNumbers([]);
 
 
 /*-----------------------------------------------------------------
@@ -103,7 +117,13 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 
+function addList(add){
+  const add = [];
+  for(let i = 0; i < add.length; i++){
+    
+  }
 
+}
 
 
 
